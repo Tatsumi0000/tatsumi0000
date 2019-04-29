@@ -1,0 +1,14 @@
+{
+  "name": "tatsumi0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Tatsumi0000/tatsumi0000.git",
+  "author": "Tatsumi0000 <ti18027@student.miyazaki-u.ac.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/cli": "^3.7.0",
+    "bubbly-bg": "^1.0.0",
+    "vue-particles": "^1.0.9",
+    "vuetify": "^1.5.13"
+  }
+}
