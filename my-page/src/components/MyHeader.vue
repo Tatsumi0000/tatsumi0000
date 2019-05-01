@@ -1,42 +1,69 @@
 <template>
+<!-- <v-app> -->
+  <div>
+    
+  <v-navigation-drawer
+  enable-resize-watcher
+  app
+  dark
+  fixed
+  clipped="clipped"
+  class="primary"
+  v-model="drawer">
+   
+    <v-list class="pt-0">
+      <v-list-tile
+      v-for="item in items"
+      :key="item.title"
+      @click.stop=""
+      >
+        <v-list-tile-action>
+          <v-icon>{{ item.icon }}</v-icon>
+        </v-list-tile-action>
+        
+        <v-list-tile-content>
+          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+    </v-list>
 
-  <span>
-    <v-navigation-drawer app v-model="drawer" class="brown lighten-2" dark disable-resize-watcher>
-      <v-list>
-        <template v-for="(item, index) in items">
-          <v-list-tile :key="index">
-            <v-list-tile-content>
-              {{item.title}}
-              </v-list-tile-content>
-          </v-list-tile>
-          <v-divider :key="`divider-${index}`"></v-divider>
-        </template>
-      </v-list>
-    </v-navigation-drawer>
-        <v-toolbar app color="brown darken-4" dark>
-          <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
-          <v-spacer class="hidden-md-and-up"></v-spacer>
-            <v-toolbar-title>{{ title }}</v-toolbar-title>
-            <v-btn flat class="hidden-sm-and-down">Menu</v-btn>
-            <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-btn flat class="hidden-sm-and-down">SIGN IN</v-btn>
-            <v-btn color="brown lighten-3" class="hidden-sm-and-down">JOIN</v-btn>
-        </v-toolbar>
-    </span>
+  </v-navigation-drawer>
 
+<v-toolbar
+app
+fixed
+dark
+clipped-left="clipped"
+class="primary darken-4"
+>
+  <v-toolbar-side-icon @click.stop="drawer = !drawer"/>
+  <v-toolbar-title>{{ title }}</v-toolbar-title>
+  
+  <v-toolbar-items class="hidden-sm-and-down">
+    <v-btn flat v-for="item in items" v-bind:key="item.title">
+      {{ item.title }}
+    </v-btn>
+  </v-toolbar-items>
+</v-toolbar>
+
+</div>
 
 </template>
 
 <script>
+
+
+
 export default {
   data() {
     return {
       title: 'Title',
       drawer: false,
+      clipped: false,
       items: [
-                { title: 'Menu' },
-                { title: 'Sign In' },
-                { title: 'Join' }
+                { title: 'Menu', icon: 'person' },
+                { title: 'Sign In', icon: 'info' },
+                { title: 'Join', icon: 'sentiment_satisfied_alt' }
             ],
       toolbar: {
         fixed: true,
@@ -53,5 +80,6 @@ export default {
 v-toolbar {
   color: #000;
 }
+
 </style>
 

@@ -5,6 +5,10 @@
     </transition>
     <vue-particles
         color="#dedede"
+        :linesWidth="3"
+        :clickEffect="false"
+        :hoverEffect="false"
+        
         />
   </div>
   

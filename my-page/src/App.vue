@@ -1,9 +1,7 @@
 <template>
   <v-app>
     
-    <!-- <bubbly></bubbly> -->
-    <!-- <vue-particles color="#dedede"></vue-particles> -->
-    <MyHeader />
+    <MyHeader/>
     <v-content>
       <MyTopPage/> 
       <!-- <HelloWorld/> -->
@@ -13,7 +11,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import MyTopPage from './components/MyTopPage.vue'
 import SkillGraph from './components/SkillGraph.vue'
 import MyHeader from './components/MyHeader.vue'
@@ -21,7 +19,7 @@ import MyHeader from './components/MyHeader.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    // HelloWorld,
     MyTopPage,
     SkillGraph,
     MyHeader
