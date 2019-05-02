@@ -9,16 +9,16 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import MyTopPage from './components/MyTopPage.vue'
-import SkillGraph from './components/SkillGraph.vue'
+// import MyTopPage from './components/MyTopPage.vue'
+// import SkillGraph from './components/SkillGraph.vue'
 import MyHeader from './components/MyHeader.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    MyTopPage,
-    SkillGraph,
+    // MyTopPage,
+    // SkillGraph,
     MyHeader
   },
   data () {
@@ -31,3 +31,11 @@ export default {
   }
 }
 </script>
+
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+</style>
+
