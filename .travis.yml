@@ -14,7 +14,8 @@ install:
   - cd my-page
   - yarn install
   - yarn build
-  - cd dist
+  - pwd
+#  - cd dist
 
 script:
   - echo "Skipping tests"
