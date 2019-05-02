@@ -15,6 +15,7 @@ install:
   - yarn install
   - yarn build
   - pwd
+  - ls
   - cd ./dist
 
 script:
@@ -31,7 +32,7 @@ deploy:
   # force push（強制プッシュ）を無効
   keep_history: true
   # プッシュするディレクトリを指定（今回はドキュメントのみをプッシュするのでdocsディレクトリを指定）
-  local_dir: dist
+  local_dir: my-page/dist
   # デプロイを行う条件
   on:
     branch: master
