@@ -15,16 +15,23 @@ install:
   - yarn install
   - yarn build
   - pwd
-#  - cd dist
+  - cd ./dist
 
 script:
   - echo "Skipping tests"
 
+#  デプロイの設定
 deploy:
+  # リリースに使うサービスの設定（他には，HerokuやAWSがある．今回は，GitHub Pagesを使う）  
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  target-branch: gh-pages
-  local-dir: dist
+  # ビルド中に作られたファイルを破棄するか（今回は，破棄しない）
+  skip_cleanup: true
+  # GitHubにあげるためのトークン
+  github_token: $GITHUB_TOKEN
+  # force push（強制プッシュ）を無効
+  keep_history: true
+  # プッシュするディレクトリを指定（今回はドキュメントのみをプッシュするのでdocsディレクトリを指定）
+  local_dir: dist
+  # デプロイを行う条件
   on:
     branch: master
