@@ -4,7 +4,7 @@
         <h1> {{ title }} </h1>
     </transition>
     <vue-particles
-        color="#696969"
+        color="#808080"
         :linesWidth="3"
         :clickEffect="false"
         :hoverEffect="false"
@@ -38,13 +38,13 @@ export default {
 /* particlesのサイズをトップページと同じにする */
 #particles-js {
   width: 100vw;
-  height: 100vh;
+  height: 700px;
 }
 
 .my-top-page {
   position: relative;
   width: 100vw; /* viewport width ビューポートの幅に対する割合 */
-  height: 100vh; /* viewport height ビューポートの高さに対する割合 */
+  height: 700px; /* viewport height ビューポートの高さに対する割合 */
   background: rgba(0, 255, 200, 0.5);
   z-index: 1;
   /* text-align: center; */
@@ -53,7 +53,7 @@ export default {
 .my-top-page h1 {
   font-size: 40px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform : translate(-50%,-50%);
   color:gray;
@@ -65,7 +65,7 @@ export default {
     /*　画面サイズが480pxからはここを読み込む　*/
 .my-top-page h1 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform : translate(-50%,-50%);
   font-size: 50px;
@@ -78,7 +78,7 @@ export default {
     /*　画面サイズが768pxから1024pxまではここを読み込む　*/
 .my-top-page h1 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform : translate(-50%,-50%);
    font-size: 60px;
@@ -91,7 +91,7 @@ export default {
 .my-top-page h1 {
   font-size: 60px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform : translate(-50%, -50%);
   /* margin: auto; */
