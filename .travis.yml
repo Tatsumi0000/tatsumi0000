@@ -13,7 +13,8 @@ branches:
 install:
   - cd my-page
   - yarn install
-  - DEPLOY_ENV=GH_PAGES yarn run generate
+  - yran build
+  - cd dist
 
 script:
   - echo "Skipping tests"
