@@ -5,11 +5,10 @@ import MyTopPage from '@/components/MyTopPage.vue'
 import SkillGraph from '@/components/SkillGraph.vue'
 import About from '@/components/About.vue'
 
-
-
 export const routes = [
   {path: '/about', component: About},
   {path: '/top', component: MyTopPage},
   {path: '/skill', component: SkillGraph},
+  {path: '', redirect: '/top'},
   {path: '*', redirect: '/top'}, // "いずれにもマッチしないとtopに自動でリダイレクト"
 ]

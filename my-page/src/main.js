@@ -10,7 +10,7 @@ Vue.use(VueParticles)
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  mode: 'history', // urlに出てくる "#" を消す
+  // mode: 'history', // urlに出てくる "#" を消す
   routes
 })
 
