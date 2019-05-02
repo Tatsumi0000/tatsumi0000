@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: "./",
-  assetsDir: "",
-  outputDir: "dist"
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/tatsumi0000/'
+    : '/'
 }
