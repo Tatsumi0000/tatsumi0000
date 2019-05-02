@@ -13,7 +13,7 @@ branches:
 install:
   - cd my-page
   - yarn install
-  - yran build
+  - yarn build
   - cd dist
 
 script:
