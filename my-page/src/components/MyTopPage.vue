@@ -4,14 +4,12 @@
         <h1> {{ title }} </h1>
     </transition>
     <vue-particles
-        color="#dedede"
+        color="#696969"
         :linesWidth="3"
         :clickEffect="false"
         :hoverEffect="false"
-        
         />
   </div>
-  
   
 </template>
 
@@ -40,13 +38,13 @@ export default {
 /* particlesのサイズをトップページと同じにする */
 #particles-js {
   width: 100vw;
-  height: 700px;
+  height: 100vh;
 }
 
 .my-top-page {
   position: relative;
   width: 100vw; /* viewport width ビューポートの幅に対する割合 */
-  height: 700px; /* viewport height ビューポートの高さに対する割合 */
+  height: 100vh; /* viewport height ビューポートの高さに対する割合 */
   background: rgba(0, 255, 200, 0.5);
   z-index: 1;
   /* text-align: center; */

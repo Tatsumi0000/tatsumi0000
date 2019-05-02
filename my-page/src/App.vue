@@ -1,11 +1,8 @@
 <template>
   <v-app>
-    
     <MyHeader/>
     <v-content>
-      <MyTopPage/> 
-      <!-- <HelloWorld/> -->
-      <SkillGraph />
+      <router-view />
     </v-content>
   </v-app>
 </template>

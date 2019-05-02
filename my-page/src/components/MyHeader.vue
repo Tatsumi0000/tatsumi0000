@@ -15,6 +15,8 @@
       <v-list-tile
       v-for="item in items"
       :key="item.title"
+      :to="item.path"
+      active-class="primary darken-1"
       @click.stop=""
       >
         <v-list-tile-action>
@@ -34,13 +36,18 @@ app
 fixed
 dark
 clipped-left="clipped"
-class="primary darken-4"
+class="primary"
 >
   <v-toolbar-side-icon @click.stop="drawer = !drawer"/>
   <v-toolbar-title>{{ title }}</v-toolbar-title>
-  
+  <v-spacer/>
   <v-toolbar-items class="hidden-sm-and-down">
-    <v-btn flat v-for="item in items" v-bind:key="item.title">
+    <v-btn
+    flat
+    v-for="item in items"
+    v-bind:key="item.title"
+    :to="item.path"
+    active-class="primary darken-1">
       {{ item.title }}
     </v-btn>
   </v-toolbar-items>
@@ -52,8 +59,6 @@ class="primary darken-4"
 
 <script>
 
-
-
 export default {
   data() {
     return {
@@ -61,9 +66,10 @@ export default {
       drawer: false,
       clipped: false,
       items: [
-                { title: 'Menu', icon: 'person' },
-                { title: 'Sign In', icon: 'info' },
-                { title: 'Join', icon: 'sentiment_satisfied_alt' }
+        { title: 'Top', icon: 'person', path: 'top' },
+        { title: 'About', icon: 'person', path: 'about' },
+        { title: 'Skill', icon: 'info', path: 'skill' },
+        { title: 'Join', icon: 'sentiment_satisfied_alt' }
             ],
       toolbar: {
         fixed: true,
