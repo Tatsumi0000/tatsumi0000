@@ -66,7 +66,7 @@ export default {
       drawer: false,
       clipped: false,
       items: [
-        { title: 'Top', icon: 'person', path: 'top' },
+        { title: 'Top', icon: 'filter_vintage', path: 'top' },
         { title: 'About', icon: 'person', path: 'about' },
         { title: 'Skill', icon: 'info', path: 'skill' },
         { title: 'Join', icon: 'sentiment_satisfied_alt' }

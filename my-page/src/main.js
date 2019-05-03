@@ -11,7 +11,15 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   // mode: 'history', // urlに出てくる "#" を消す
-  routes
+  routes,
+  // 画面遷移時に上に戻す
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return {x: 0, y: 0}
+    }
+  }
 })
 
 new Vue({

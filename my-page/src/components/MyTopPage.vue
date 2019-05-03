@@ -47,7 +47,7 @@ export default {
   height: 700px; /* viewport height ビューポートの高さに対する割合 */
   background: rgba(0, 255, 200, 0.5);
   z-index: 1;
-  /* text-align: center; */
+/* text-align: center; */
 }
 
 .my-top-page h1 {
@@ -61,8 +61,9 @@ export default {
    }
 
 /* https://sole-color-blog.com/blog/71/  */
+/* 画面サイズが480pxからはここを読み込む */
 @media screen and (min-width:360px) { 
-    /*　画面サイズが480pxからはここを読み込む　*/
+
 .my-top-page h1 {
   position: absolute;
   top: 30%;
@@ -74,8 +75,9 @@ export default {
    }
 }
 
+/* 画面サイズが768pxから1024pxまではここを読み込む */
 @media screen and (min-width:768px) and (max-width:1024px) {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+
 .my-top-page h1 {
   position: absolute;
   top: 30%;
@@ -86,8 +88,9 @@ export default {
    text-align: center;
    }
 }
+/* 画面サイズが1024pxからはここを読み込む */
 @media screen and (min-width:1024px) {
-    /*　画面サイズが1024pxからはここを読み込む　*/
+
 .my-top-page h1 {
   font-size: 60px;
   position: absolute;
@@ -108,7 +111,7 @@ export default {
 }
 
 .v-enter {
-  /* 透明度を0 */
+/* 透明度を0 */
   opacity: 0;
 }
 

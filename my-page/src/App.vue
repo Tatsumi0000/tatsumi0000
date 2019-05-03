@@ -37,5 +37,16 @@ export default {
   margin: 0px;
   padding: 0px;
 }
+
+body {
+  @font-face {
+  font-family: YuGothicM;
+  src: local("Yu Gothic Medium");
+}
+ 
+font-family:-apple-system,BlinkMacSystemFont, "Helvetica Neue" ,"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+}
+
+
 </style>
 
