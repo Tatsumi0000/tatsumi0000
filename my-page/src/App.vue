@@ -1,9 +1,11 @@
 <template>
   <v-app>
     <MyHeader/>
-    <v-content>
-      <router-view />
-    </v-content>
+    <v-container fluid class="my_margin">
+      <router-view></router-view>
+    </v-container>
+            
+    <MyFooter/>
   </v-app>
 </template>
 
@@ -12,6 +14,7 @@
 // import MyTopPage from './components/MyTopPage.vue'
 // import SkillGraph from './components/SkillGraph.vue'
 import MyHeader from './components/MyHeader.vue'
+import MyFooter from './components/MyFooter.vue'
 
 export default {
   name: 'App',
@@ -19,7 +22,8 @@ export default {
     // HelloWorld,
     // MyTopPage,
     // SkillGraph,
-    MyHeader
+    MyHeader,
+    MyFooter
   },
   data () {
     return {
@@ -32,12 +36,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 * {
   margin: 0px;
   padding: 0px;
 }
 
+.my_margin {
+  padding-bottom: 11px;
+}
 body {
   @font-face {
   font-family: YuGothicM;

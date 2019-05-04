@@ -38,22 +38,22 @@ export default {
 /* particlesのサイズをトップページと同じにする */
 #particles-js {
   width: 100vw;
-  height: 700px;
+  height: 100vh;
 }
 
 .my-top-page {
   position: relative;
   width: 100vw; /* viewport width ビューポートの幅に対する割合 */
-  height: 700px; /* viewport height ビューポートの高さに対する割合 */
+  height: 100vh; /* viewport height ビューポートの高さに対する割合 */
   background: rgba(0, 255, 200, 0.5);
-  z-index: 1;
+  
 /* text-align: center; */
 }
 
 .my-top-page h1 {
   font-size: 40px;
   position: absolute;
-  top: 30%;
+  top: 300px;
   left: 50%;
   transform : translate(-50%,-50%);
   color:gray;
@@ -66,7 +66,7 @@ export default {
 
 .my-top-page h1 {
   position: absolute;
-  top: 30%;
+  top: 300px;
   left: 50%;
   transform : translate(-50%,-50%);
   font-size: 50px;
@@ -80,7 +80,7 @@ export default {
 
 .my-top-page h1 {
   position: absolute;
-  top: 30%;
+  top: 300px;
   left: 50%;
   transform : translate(-50%,-50%);
    font-size: 60px;
@@ -94,7 +94,7 @@ export default {
 .my-top-page h1 {
   font-size: 60px;
   position: absolute;
-  top: 30%;
+  top: 300px;
   left: 50%;
   transform : translate(-50%, -50%);
   /* margin: auto; */

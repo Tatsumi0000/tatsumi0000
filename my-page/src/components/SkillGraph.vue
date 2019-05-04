@@ -1,5 +1,5 @@
 <template>
-    <div class="skill-graph">
+    <div class="skill-graph my_margin">
     <div class="bar bar1">{{ bar1 }}</div>
     <div class="bar bar2">{{ bar2 }}</div>
     <div class="bar bar3">{{ bar3 }}</div>
@@ -23,6 +23,11 @@ export default {
 </script>
 
 <style scoped>
+.my_margin {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
 .bar {
   white-space: nowrap; /* 文字を折り返さない */
   text-align: left;

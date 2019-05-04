@@ -87,5 +87,10 @@ v-toolbar {
   color: #000;
 }
 
+/* * {
+  margin-bottom: 10px;
+  margin: 0px;
+} */
+
 </style>
 
