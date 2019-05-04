@@ -38,13 +38,13 @@ export default {
 /* particlesのサイズをトップページと同じにする */
 #particles-js {
   width: 100vw;
-  height: 100vh;
+  height: 800px;
 }
 
 .my-top-page {
   position: relative;
   width: 100vw; /* viewport width ビューポートの幅に対する割合 */
-  height: 100vh; /* viewport height ビューポートの高さに対する割合 */
+  height: 800px; /* viewport height ビューポートの高さに対する割合 */
   background: rgba(0, 255, 200, 0.5);
   
 /* text-align: center; */

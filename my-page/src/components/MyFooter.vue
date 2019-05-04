@@ -1,5 +1,6 @@
 <template>
-  <v-footer dark>
+<div class="my_margin">
+<v-footer dark >
   <v-card flat tile class="primary white--text text-xs-center flex">
     <v-card-text>
       <v-btn
@@ -16,10 +17,11 @@
    
     <v-divider></v-divider>
     <v-card-text class="white--text">
-      &copy;2019 Tatsumi0000
+      &copy;{{ new Date().getFullYear() }} Tatsumi0000
     </v-card-text>
   </v-card>
   </v-footer>
+</div>
 </template>
 
 <script>
@@ -37,6 +39,9 @@ export default {
 </script>
 
 <style scoped>
-
+.my_margin {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 </style>
 

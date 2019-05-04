@@ -42,9 +42,8 @@ export default {
   padding: 0px;
 }
 
-.my_margin {
-  padding-bottom: 11px;
-}
+
+
 body {
   @font-face {
   font-family: YuGothicM;
