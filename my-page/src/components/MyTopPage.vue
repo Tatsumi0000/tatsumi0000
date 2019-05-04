@@ -51,7 +51,7 @@ export default {
 }
 
 .my-top-page h1 {
-  font-size: 40px;
+  font-size: 3rem;
   position: absolute;
   top: 300px;
   left: 50%;
@@ -65,11 +65,12 @@ export default {
 @media screen and (min-width:360px) { 
 
 .my-top-page h1 {
+  font-family: 'ヒラギノ角ゴシック Pro';
   position: absolute;
   top: 300px;
   left: 50%;
   transform : translate(-50%,-50%);
-  font-size: 50px;
+  font-size: 3rem;
   color:gray;
   text-align: center;
    }
@@ -83,16 +84,16 @@ export default {
   top: 300px;
   left: 50%;
   transform : translate(-50%,-50%);
-   font-size: 60px;
-   color:gray;
-   text-align: center;
+  font-size: 3rem;
+  color:gray;
+  text-align: center;
    }
 }
 /* 画面サイズが1024pxからはここを読み込む */
 @media screen and (min-width:1024px) {
 
 .my-top-page h1 {
-  font-size: 60px;
+  font-size: 3rem;
   position: absolute;
   top: 300px;
   left: 50%;
