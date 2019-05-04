@@ -113,7 +113,7 @@ export default {
 
 .my_margin {
   margin-top: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 h1 {
