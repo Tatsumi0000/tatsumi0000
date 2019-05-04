@@ -1,9 +1,12 @@
 <template>
   <v-app>
     <MyHeader/>
-    <v-container fluid class="my_margin">
+    <!-- <v-container fluid class="my_margin">
       <router-view></router-view>
-    </v-container>
+    </v-container> -->
+    <v-content>
+      <router-view></router-view>
+    </v-content>
             
     <MyFooter/>
   </v-app>

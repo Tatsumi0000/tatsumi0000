@@ -38,13 +38,13 @@ export default {
 /* particlesのサイズをトップページと同じにする */
 #particles-js {
   width: 100vw;
-  height: 800px;
+  height: 100vh;
 }
 
 .my-top-page {
   position: relative;
   width: 100vw; /* viewport width ビューポートの幅に対する割合 */
-  height: 800px; /* viewport height ビューポートの高さに対する割合 */
+  height: 100vh; /* viewport height ビューポートの高さに対する割合 */
   background: rgba(0, 255, 200, 0.5);
   
 /* text-align: center; */
@@ -61,7 +61,7 @@ export default {
    }
 
 /* https://sole-color-blog.com/blog/71/  */
-/* 画面サイズが480pxからはここを読み込む */
+/* 画面サイズが360pxからはここを読み込む */
 @media screen and (min-width:360px) { 
 
 .my-top-page h1 {

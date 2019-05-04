@@ -1,6 +1,6 @@
 <template>
   <v-timeline
-  class="timeline my_margin"
+  class="timeline"
   dense
   >
     <v-timeline-item
@@ -111,27 +111,22 @@ export default {
 
 <style scoped>
 
-.my_margin {
-  margin-top: 80px;
-  margin-bottom: 60px;
-}
-
-h1 {
-  text-align: center;
-}
-
 .text_small {
   text-transform: none;
 }
 
 .timeline {
+  margin-top: 20px;
+  margin-bottom: 60px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* 画面サイズが480pxからはここを読み込む */
+/* 画面サイズが360pxからはここを読み込む */
 @media screen and (min-width:360px) {
 .timeline {
+  margin-top: 20px;
+  margin-bottom: 60px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -140,17 +135,23 @@ h1 {
 /* 画面サイズが768pxから1024pxまではここを読み込む */
 @media screen and (min-width:768px) and (max-width:1024px) {
 .timeline {
+  margin-top: 20px;
+  margin-bottom: 60px;
   margin-left: 40px;
   margin-right: 40px;
 }
+
 }
 
 /* 画面サイズが1024pxからはここを読み込む */
 @media screen and (min-width:1024px) {
-  .timeline {
+.timeline {
+  margin-top: 20px;
+  margin-bottom: 60px;
   margin-left: 20%;
   margin-right: 20%;
 }
+
 }
 
 </style>

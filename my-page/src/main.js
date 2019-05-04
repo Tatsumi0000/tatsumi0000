@@ -4,13 +4,8 @@ import App from './App.vue'
 import VueParticles from 'vue-particles'
 import VueRouter from 'vue-router'
 import { routes } from './router/index.js'
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import '@fortawesome/fontawesome-free/css/all.css'
-
-// library.add(faCoffee)
-// Vue.component('font-awesome-icon', FontAwesomeIcon)
+import './stylus/main.styl'
 
 Vue.config.productionTip = false
 Vue.use(VueParticles)

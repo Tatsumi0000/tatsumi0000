@@ -65,6 +65,37 @@ export default {
     width: 100%;
   }
 }
+
+.my_margin {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/* 画面サイズが360pxからはここを読み込む */
+@media screen and (min-width:360px) { 
+
+.my_margin {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+}
+
+/* 画面サイズが768pxから1024pxまではここを読み込む */
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+.my_margin {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+}
+/* 画面サイズが1024pxからはここを読み込む */
+@media screen and (min-width:1024px) {
+
+.my_margin {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+}
 </style>
 
 
