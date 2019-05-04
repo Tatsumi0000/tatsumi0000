@@ -17,7 +17,10 @@
    
     <v-divider></v-divider>
     <v-card-text class="white--text">
-      &copy;{{ new Date().getFullYear() }} Tatsumi0000
+      &copy;{{ new Date().getFullYear() }}
+      <a href="https://github.com/Tatsumi0000/tatsumi0000" target="_black" class="white--text">
+        Tatsumi0000
+      </a>
     </v-card-text>
   </v-card>
   </v-footer>
