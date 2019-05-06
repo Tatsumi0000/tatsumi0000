@@ -20,12 +20,16 @@ const router = new VueRouter({
     let position = {x: 0, y: 0}
     if (savedPosition) {
       position = savedPosition
+      return position
+    } else {
+      return position
     }
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(position)
-      }, 500)
-    })
+    
+    // return new Promise((resolve) => {
+    //   setTimeout(() => {
+    //     resolve(position)
+    //   }, 500)
+    // })
   }
 })
 
