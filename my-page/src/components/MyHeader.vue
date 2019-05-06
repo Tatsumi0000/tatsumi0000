@@ -69,7 +69,7 @@ export default {
         { title: 'Top', icon: 'filter_vintage', path: 'top' },
         { title: 'About', icon: 'person', path: 'about' },
         { title: 'Skill', icon: 'info', path: 'skill' },
-        { title: 'Join', icon: 'sentiment_satisfied_alt' }
+        { title: 'Link', icon: 'sentiment_satisfied_alt', path: 'link' }
             ],
       toolbar: {
         fixed: true,

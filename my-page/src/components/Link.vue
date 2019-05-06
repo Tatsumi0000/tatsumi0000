@@ -1,7 +1,7 @@
 <template>
-  <div>
-    
-  </div>
+<div class="my_margin">
+  <h1> 工事中 </h1>
+</div>
 </template>
 
 <script>
@@ -20,6 +20,14 @@ export default {
 </script>
 
 <style scoped>
+.my_margin {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.my_margin h1 {
+  text-align: center;
+}
 
 </style>
 

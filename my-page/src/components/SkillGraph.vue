@@ -38,7 +38,7 @@
     <!-- rowが横並び，columnにすれば縦並び．wrapを入れないと改行されない -->
     <v-layout row wrap>
     <v-flex xs12 sm6 md4 v-for="skillData in skillDatas" :key="skillData.title" pa-3>
-      <v-card class="black--text my_card_heght_size">
+      <v-card class="black--text my_card_heght_size2">
         <v-layout row align-center>
           <v-flex xs2 sm2 md2 px-2>
             <v-img
@@ -135,12 +135,12 @@ export default {
         },
         {
           title: 'iOS',
-          contents: 'iPad上で動作するArduinoのシミュレータの開発をしています．XCTestを使ってテストコードも書いています．また，Travis CIを使ったCIもしており，jazzyを使って自動でドキュメントの生成もしています．',
+          contents: 'iPad上で動作するArduinoのシミュレータの開発をしています．XCTestを使ってテストコードも書いています．また，Travis CIを使ったCIもしています．また，CI時にjazzyを使って自動でドキュメントを生成し，GitHub Pagesに自動デプロイしています．',
           icon: 'xcode'
         },
         {
           title: 'CI',
-          contents: 'Travis CIを使ってCIにも挑戦しています．このWebページもGitHubにプッシュすると自動でビルドし，GitHub Pagesに自動でデプロイするようにしています．iOS開発では，Codecoveと連携した開発もしています．',
+          contents: 'Travis CIを使ってCIにも挑戦しています．このWebページもGitHubにプッシュすると自動でビルドし，GitHub Pagesに自動でデプロイしています．iOS開発では，Codecoveと連携した開発もしています．',
           icon: 'travisci'
         },
         {
@@ -172,10 +172,30 @@ export default {
   margin: auto;
 }
 
+/* 画面サイズが320pxからはここを読み込む */
+@media screen and (min-width:320px) {
 .my_card_heght_size {
-  height: 14rem;
-  fill: white;
+  height: 15.5rem;
 }
+.my_card_heght_size2 {
+  height: 19rem;
+}
+}
+
+
+/* 画面サイズが768pxからはここを読み込む */
+@media screen and (min-width:768px){
+.my_card_heght_size {
+  height: 15rem;
+}
+.my_card_heght_size2 {
+  height: 17rem;
+}
+
+}
+
+
+
 
 .icon_font_size {
   width: 3.5rem;
