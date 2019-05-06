@@ -1,18 +1,14 @@
 <template>
   <v-app>
     <MyHeader/>
-    <!-- <v-container fluid class="my_margin">
-      <router-view></router-view>
-    </v-container> -->
-    
     <v-content>
-      <transition name="fade" mode="out-in">
-      <router-view></router-view>
-       </transition>
-      
+      <!-- <transition name="fade" mode="out-in"> -->
+        <router-view></router-view>
+      <!-- </transition> -->
+      <MyFooter/>
+      <!-- <my-footer  :key="my_footer"></my-footer> -->
     </v-content>
-           
-    <MyFooter/>
+    
   </v-app>
 </template>
 

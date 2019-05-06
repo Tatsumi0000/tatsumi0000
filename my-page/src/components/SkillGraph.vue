@@ -1,10 +1,68 @@
 <template>
-    <div class="skill-graph my_margin">
+  <!-- <div class="skill-graph my_margin">
     <div class="bar bar1">{{ bar1 }}</div>
     <div class="bar bar2">{{ bar2 }}</div>
     <div class="bar bar3">{{ bar3 }}</div>
     <div class="bar bar4">{{ bar4 }}</div>
-  </div>
+  </div> -->
+  <v-container class="my_margin">
+    <h1> プログラミング言語 </h1>
+    <!-- rowが横並び，columnにすれば縦並び．wrapを入れないと改行されない -->
+    <v-layout row wrap mb-5>
+    <v-flex xs12 sm6 md4 v-for="langData in langDatas" :key="langData.title" pa-3>
+      <v-card class="black--text my_card_heght_size">
+        <v-layout row align-center>
+          <v-flex xs2 sm2 md2 px-2>
+            <v-img
+              class="icon_font_size"
+              :src="`https://unpkg.com/simple-icons@latest/icons/${langData.icon}.svg`"
+              >
+            </v-img>
+          </v-flex>
+          <v-flex xs10 sm10 md10>
+            <v-card-title class="headline">
+              {{ langData.title }}
+            </v-card-title>
+          </v-flex>
+        </v-layout>
+
+        <v-divider></v-divider>
+          <v-card-text>
+            {{ langData.contents }}
+          </v-card-text>
+    </v-card>
+    </v-flex>
+    </v-layout>
+
+    <h1> スキル </h1>
+    <!-- rowが横並び，columnにすれば縦並び．wrapを入れないと改行されない -->
+    <v-layout row wrap>
+    <v-flex xs12 sm6 md4 v-for="skillData in skillDatas" :key="skillData.title" pa-3>
+      <v-card class="black--text my_card_heght_size">
+        <v-layout row align-center>
+          <v-flex xs2 sm2 md2 px-2>
+            <v-img
+              class="icon_font_size"
+              :src="`https://unpkg.com/simple-icons@latest/icons/${skillData.icon}.svg`"
+              >
+            </v-img>
+          </v-flex>
+          <v-flex xs10 sm10 md10>
+            <v-card-title class="headline">
+              {{ skillData.title }}
+            </v-card-title>
+          </v-flex>
+        </v-layout>
+
+        <v-divider></v-divider>
+          <v-card-text>
+            {{ skillData.contents }}
+          </v-card-text>
+    </v-card>
+    </v-flex>
+    </v-layout>
+
+  </v-container>
 </template>
 
 <script>
@@ -16,16 +74,113 @@ export default {
       bar1: 'A 70%',
       bar2: 'B 30%',
       bar3: 'C 60%',
-      bar4: 'D 50%'
+      bar4: 'D 50%',
+      langDatas: [
+        {
+          title: 'Java',
+          contents: '授業で習い，Android開発でも使用していました．',
+          icon: 'java'
+        },
+        {
+          title: 'Kotlin',
+          contents: 'Android開発で使用しています．',
+          icon: 'kotlin'
+        },
+        {
+          title: 'Swift',
+          contents: 'iOS開発で使用しています．',
+          icon: 'swift'
+        },
+        {
+          title: 'C，C++',
+          contents: 'ETロボコンで使用しています．',
+          icon: 'cplusplus'
+        },
+        {
+          title: 'Python',
+          contents: '授業で少しと，Pepper開発で使用していました．',
+          icon: 'python'
+        },
+        {
+          title: 'Ruby',
+          contents: 'Twitter，FacebookのAPIと，Android，iOS端末にプッシュ通知を送信するために使用しました．',
+          icon: 'ruby'
+        },
+        {
+          title: 'HTML，CSS',
+          contents: 'このWebページを作成するために使用しました．',
+          icon: 'html5'
+        },
+        {
+          title: 'JavaScript',
+          contents: 'このWebページを作成するために，Vue.jsを使用しました．',
+          icon: 'javascript'
+        },
+        {
+          title: 'PHP',
+          contents: 'Android，iOS端末とサーバサイドの連携をするためのAPI開発で使用しました．',
+          icon: 'php'
+        },
+        {
+          title: 'SQL',
+          contents: '授業で習いました．また，Android，iOS端末から受け取ったデータをDBに保存するために利用しました．授業ではMySQL，個人開発では，MariaDBを使用しました．',
+          icon: 'mysql'
+        },
+      ],
+      skillDatas: [
+        {
+          title: 'Android',
+          contents: '友人がコーチをしているサッカーチームのアプリをチームで開発したり，研究室で開発していたアプリ開発の手伝いもしていました．',
+          icon: 'android'
+        },
+        {
+          title: 'iOS',
+          contents: 'iPad上で動作するArduinoのシミュレータの開発をしています．XCTestを使ってテストコードも書いています．また，Travis CIを使ったCIもしており，jazzyを使って自動でドキュメントの生成もしています．',
+          icon: 'xcode'
+        },
+        {
+          title: 'CI',
+          contents: 'Travis CIを使ってCIにも挑戦しています．このWebページもGitHubにプッシュすると自動でビルドし，GitHub Pagesに自動でデプロイするようにしています．iOS開発では，Codecoveと連携した開発もしています．',
+          icon: 'travisci'
+        },
+        {
+          title: 'Git',
+          contents: 'ソースコード管理では，GitHubを使用しています．',
+          icon: 'git'
+        },
+        {
+          title: 'Vue.js',
+          contents: 'このWebページを開発するために使用しました．Vuetifyを使って開発しました．',
+          icon: 'vue-dot-js'
+        },
+      ]
     }
   },
 }
 </script>
 
 <style scoped>
+.my_svg path{
+  color: #fff;
+  fill: currentColor;
+}
+
 .my_margin {
   margin-top: 80px;
   margin-bottom: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.my_card_heght_size {
+  height: 14rem;
+  fill: white;
+}
+
+.icon_font_size {
+  width: 3.5rem;
+  height: 3.5rem;
+  /* height="32" width="32" */
 }
 
 .bar {
