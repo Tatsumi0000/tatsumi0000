@@ -6,7 +6,7 @@
     <div class="bar bar4">{{ bar4 }}</div>
   </div> -->
   <v-container class="my_margin">
-    <h1> プログラミング言語 </h1>
+    <div class="headline"> プログラミング言語 </div>
     <!-- rowが横並び，columnにすれば縦並び．wrapを入れないと改行されない -->
     <v-layout row wrap mb-5>
     <v-flex xs12 sm6 md4 v-for="langData in langDatas" :key="langData.title" pa-3>
@@ -34,7 +34,7 @@
     </v-flex>
     </v-layout>
 
-    <h1> スキル </h1>
+    <div class="headline"> スキル </div>
     <!-- rowが横並び，columnにすれば縦並び．wrapを入れないと改行されない -->
     <v-layout row wrap>
     <v-flex xs12 sm6 md4 v-for="skillData in skillDatas" :key="skillData.title" pa-3>
@@ -103,7 +103,7 @@ export default {
         },
         {
           title: 'Ruby',
-          contents: 'Twitter，FacebookのAPIと，Android，iOS端末にプッシュ通知を送信するために使用しました．',
+          contents: 'Twitter，FacebookのAPIを利用するためと，Android，iOS端末にプッシュ通知を送信するために使用しました．',
           icon: 'ruby'
         },
         {
@@ -130,7 +130,7 @@ export default {
       skillDatas: [
         {
           title: 'Android',
-          contents: '友人がコーチをしているサッカーチームのアプリをチームで開発したり，研究室で開発していたアプリ開発の手伝いもしていました．',
+          contents: '友人がコーチをしているサッカークラブのアプリをチームで開発したり，研究室で開発していたアプリ開発の手伝いもしていました．',
           icon: 'android'
         },
         {

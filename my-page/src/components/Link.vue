@@ -1,6 +1,12 @@
 <template>
 <div class="my_margin">
-  <h1> 工事中 </h1>
+  <v-container pa-1 text-xs-center>
+    <v-layout>
+      <v-flex class="display-1">
+        工事中
+      </v-flex>
+    </v-layout>
+  </v-container>
 </div>
 </template>
 
