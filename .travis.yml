@@ -21,7 +21,8 @@ script:
   - echo "Skipping tests"
 
 after_success:
-  - openssl aes-256-cbc -K $encrypted_9490f26f678e_key -iv $encrypted_9490f26f678e_iv -in ./../sample_key.enc -out ~/.ssh/id_rsa -d
+  - openssl aes-256-cbc -K $encrypted_9490f26f678e_key -iv $encrypted_9490f26f678e_iv -in ./../sample_key.enc -out ~\/sample_key -d
+  - cp sample_key ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - cd ~
