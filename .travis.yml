@@ -17,8 +17,8 @@ install:
   - pwd
   - ls
 
-script:
-  - echo "Skipping tests"
+# script:
+#  - echo "Skipping tests"
 
 after_success:
   - openssl aes-256-cbc -K $encrypted_9490f26f678e_key -iv $encrypted_9490f26f678e_iv -in ./../.sample_key.enc -out ~/.ssh/id_rsa -d
@@ -26,8 +26,9 @@ after_success:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - git config --global user.email "ti18027@student.miyazaki-u.ac.jp"
   - git config --global user.name "Tatsumi0000"
+  - cd ~
   - git clone https://github.com/Tatsumi0000/Tatsumi0000.github.io.git
-  - cp -r ./dist ./Tatsumi0000.github.io
+  - cp -r ./home/travis/build/Tatsumi0000/tatsumi0000/dist ./Tatsumi0000.github.io
   - git add .
   - git commit -m "by Travis CI (JOB $TRAVIS_JOB_NUMBER)"
   - git push origin master
