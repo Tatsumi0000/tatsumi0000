@@ -29,7 +29,7 @@ after_success:
   - cd ~
   - ls
   - pwd
-  - git clone git@github.com:Tatsumi0000/Tatsumi0000.github.io.git
+  - git clone https://github.com/Tatsumi0000/Tatsumi0000.github.io.git
   - cp -r /home/travis/build/Tatsumi0000/tatsumi0000/my-page/dist ~/Tatsumi0000.github.io
   - cd Tatsumi0000.github.io
   - git add .
