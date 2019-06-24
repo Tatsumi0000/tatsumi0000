@@ -27,8 +27,10 @@ after_success:
   - git config --global user.email "ti18027@student.miyazaki-u.ac.jp"
   - git config --global user.name "Tatsumi0000"
   - cd ~
+  - ls
+  - pwd
   - git clone https://github.com/Tatsumi0000/Tatsumi0000.github.io.git
-  - cp -r ./home/travis/build/Tatsumi0000/tatsumi0000/dist ./Tatsumi0000.github.io
+  - cp -r ./home/travis/build/Tatsumi0000/tatsumi0000/dist ~/Tatsumi0000.github.io
   - cd Tatsumi0000.github.io
   - git add .
   - git commit -m "by Travis CI (JOB $TRAVIS_JOB_NUMBER)"
